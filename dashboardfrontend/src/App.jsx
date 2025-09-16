@@ -6,6 +6,27 @@ import InvoiceList from './components/InvoiceList';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import './App.css'; // Your Tailwind CSS file
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+} from 'chart.js';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 
 function App() {
   return (
